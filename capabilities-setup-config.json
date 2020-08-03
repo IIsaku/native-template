@@ -86,7 +86,7 @@
                     "#import <GoogleMaps/GoogleMaps.h>"
                 ],
                 "didFinishLaunchingWithOptions": [
-                    "[GMSServices provideAPIKey:@\"_YOUR_API_KEY_\"];"
+                    "[GMSServices provideAPIKey:[[NSBundle mainBundle] objectForInfoDictionaryKey:@\"GoogleMapsApiKey\"] ?: @\"\"];"
                 ]
             },
             "pods": {
